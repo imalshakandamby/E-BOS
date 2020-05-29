@@ -1,0 +1,47 @@
+@import '../../assets/grid/grid.scss';
+
+// .dashboard{
+//     @include row;
+//     grid-gap: 0px;
+//     .sidebar{
+
+//         // @include columns(12);
+//         // @include small-columns(5, 6);
+//         // @include medium-columns(5, 6);
+//         @include large-columns(2, 1);
+//         @include small {
+//             // padding-left: 4.5rem;
+//         }
+
+//     }
+//     .content{
+//         @include large-columns(10, 3);
+
+//     }
+// }
+.search-slt{
+    border-radius: 0px;
+    font-size: 25px;
+}
+.search-btn{
+    border-radius: 0px;
+    width: 100%;
+    font-size: 25px;
+
+}
+.welcome-heading{
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+}
+#searchForm{
+    height: 100vh;
+    @include row;
+    grid-gap: 0px;
+    align-items: center;
+
+    .row{
+        @include columns(12);
+    }
+
+}

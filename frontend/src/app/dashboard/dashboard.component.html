@@ -1,0 +1,27 @@
+<div class="dashboard">
+  <div class="sidebar">
+
+    <div class="dashboard-brand">
+      <a>E-BOS</a>
+    </div>
+    <ul class="navbar-nav">
+        <li *ngFor="let menuItem of menuItems" class="{{menuItem.class}} nav-item">
+            <a routerLinkActive="active" [routerLink]="[menuItem.path]" class="nav-link">
+                <i class="ni {{menuItem.icon}}"></i>
+                {{menuItem.title}}
+            </a>
+        </li>
+    </ul>
+
+  </div>
+  <div class="content">
+      <div class="dashboard-navbar">
+        <a class="navbar-link user-name">User Name</a>
+        <a class="navbar-link logout-link">Logout</a>
+      </div>
+      <div class="content-outlet">
+          <router-outlet></router-outlet>
+      </div>
+  </div>
+
+</div>
